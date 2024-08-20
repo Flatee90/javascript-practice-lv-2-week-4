@@ -164,6 +164,22 @@ for(let i = 0; i < taskList.length; i++) {
 // console.log(`Number of completed tasks: ${completedCount}`);
 
 // TODO: Now, you try counting the completed tasks in your own task list!
+const TaskList = [];
+TaskList.push(createTask('Clean bathroom' , '2024-08-18'));
+TaskList.push(createTask('Clean silverware' , '2024-08-22'));
+TaskList.push(createTask('Shampoo carpets' , '2024-08-30'));
+
+TaskList[0].completeTask();
+TaskList[2].completeTask();
+
+let completedCount = 0;
+for(let i = 0; i < TaskList.length; i++) {
+    if (TaskList[i].completed) {
+
+    }
+}
+console.log(`Number of completed task: ${completedCount}`);
+
 
 
 // Great job! You've completed the exercises.
