@@ -45,6 +45,13 @@ people.push({ firstName: 'Emily', lastName: 'Johnson' });
 // TODO: Write your code here to aggregate the first names from the `people` array.
 
 
+let firstName = '';
+for(let i = 0; i < people.length; i++) {
+    firstName += people[i].firstName;
+    firstName += ', ';
+    console.log('first Name:', firstName);
+}
+
 // EXERCISE 2: Aggregating Last Names
 // INSTRUCTIONS: Use a for loop to aggregate all the `lastName` values into a single string, separated by commas.
 // BONUS: don't add a comma to very last item
@@ -56,7 +63,12 @@ employees.push({ firstName: 'Bob', lastName: 'White' });
 employees.push({ firstName: 'Charlie', lastName: 'Green' });
 
 // TODO: Write your code here to aggregate the last names from the `employees` array.
-
+let lastName = '';
+for(let i = 0; i < employees.length; i++) {
+    lastName += employees[i].lastName;
+    lastName += ', ';
+    console.log('last Name:', lastName);
+}
 
 // EXERCISE 3: Aggregating Product Names
 // INSTRUCTIONS: Use a for loop to aggregate all the `productName` values into a single string, separated by commas.
@@ -68,25 +80,44 @@ products.push({ productName: 'Smartphone', price: 800 });
 products.push({ productName: 'Tablet', price: 600 });
 
 // TODO: Write your code here to aggregate the product names from the `products` array.
-
+let productName = '';
+for(let i = 0; i < products.length; i++) {
+    productName += products[i].productName;
+    productName += ', ';
+    console.log('product Name:', productName);
+}
 
 // EXERCISE 4: Aggregating Task Descriptions
 // INSTRUCTIONS: Use a for loop to aggregate all the `description` values into a single string, separated by commas.
 // Log the resulting string to the console.
 
 const tasks = [];
-tasks.push({ description: 'Complete assignment', dueDate: '2024-08-20' });
-tasks.push({ description: 'Attend meeting', dueDate: '2024-08-21' });
-tasks.push({ description: 'Submit report', dueDate: '2024-08-22' });
+tasks.push({ mydescription: 'Complete assignment', dueDate: '2024-08-20' });
+tasks.push({ mydescription: 'Attend meeting', dueDate: '2024-08-21' });
+tasks.push({ mydescription: 'Submit report', dueDate: '2024-08-22' });
+let mydescription = '';
+for(let i = 0; i < tasks.length; i++) {
+    mydescription += tasks[i].mydescription;
+    mydescription += ', ';
+    console.log('my description:', mydescription);
+}
+
+
 
 // EXERCISE 5: Aggregating animal sounds
 const exampleAnimals = [];
-exampleAnimals.push({ species: 'Dog', sound: 'Bark' });
-exampleAnimals.push({ species: 'Cat', sound: 'Meow' });
-exampleAnimals.push({ species: 'Cow', sound: 'Moo' });
+exampleAnimals.push({ species: 'Dog', animalSound: 'Bark' });
+exampleAnimals.push({ species: 'Cat', animalSound: 'Meow' });
+exampleAnimals.push({ species: 'Cow', animalSound: 'Moo' });
 
 // TODO: Write your code here to aggregate the animal sounds.
-
+let animalSound = '';
+for(let i = 0; i < exampleAnimals.length; i++) {
+    animalSound += exampleAnimals[i].animalSound;
+    animalSound += ', ';
+    console.log('animal Sound:', animalSound);
+}
+console.log('Hello world');
 
 // Great job! You've completed the exercises.
 // These exercises should have helped you practice using for loops to aggregate information from objects in arrays.
